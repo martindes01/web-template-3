@@ -134,7 +134,7 @@ body {
 }
 
 .FooterColumnCell {
-    height: var(--dFooterColumnCellHeight);
+    min-height: var(--dFooterColumnCellHeight);
     line-height: var(--dFooterColumnCellHeight);
 }
 
