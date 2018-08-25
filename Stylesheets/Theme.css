@@ -1,0 +1,22 @@
+﻿:root {
+    --cBackgroundColor_Background: #F1F3F4;
+    --cBackgroundColor_Error: #B00020;
+    --cBackgroundColor_Primary: #1976D2;
+    --cBackgroundColor_PrimaryDark: #004BA0;
+    --cBackgroundColor_PrimaryLight: #63A4FF;
+    --cBackgroundColor_Secondary: #E91E63;
+    --cBackgroundColor_SecondaryDark: #B0003A;
+    --cBackgroundColor_SecondaryLight: #FF6090;
+    --cBackgroundColor_Surface: #FFFFFF;
+    --cColor_Background: #000000;
+    --cColor_Error: #FFFFFF;
+    --cColor_Outline: rgba(0, 0, 0, 0.12); /* Based on --cColorSurface */
+    --cColor_Primary: #FFFFFF;
+    --cColor_PrimaryDark: #FFFFFF;
+    --cColor_PrimaryLight: #000000;
+    --cColor_Secondary: #000000;
+    --cColor_SecondaryDark: #FFFFFF;
+    --cColor_SecondaryLight: #000000;
+    --cColor_Surface: #000000;
+    --cFontFamily: 'Roboto', sans-serif;
+}
