@@ -1,0 +1,9 @@
+﻿/* Following styles not applicable by CSS variables in Edge / Internet Explorer */
+
+a {
+    color: inherit;
+}
+
+.Footer {
+    text-align: center;
+}
