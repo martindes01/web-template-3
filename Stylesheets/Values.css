@@ -1,0 +1,160 @@
+﻿:root {
+    /* CONSTANTS */
+    --cCursor_Link: pointer;
+    --cOpacity_Opaque: 1;
+    --cOpacity_Transparent: 0;
+    --cSize_Base1: 8px;
+    --cSize_Base2: 16px;
+    --cSize_Base3: 56px;
+    --cSize_Null: 0;
+    --cTextDecoration_Default: none;
+}
+
+/* VARIABLES */
+:root {
+    --vContentPadding: var(--cSize_Null) var(--cSize_Base2);
+    --vContentBlockWidth_1-1-1: calc(100% - var(--cSize_Base2));
+    --vContentBlockWidth_1-1-3: calc(100% - var(--cSize_Base2));
+    --vContentBlockWidth_1-2-3: calc(100% - var(--cSize_Base2));
+    --vContentBlockTableGridTemplateColumns: initial;
+    --vFooterDisplay: block;
+    --vFooterGridTemplateColumns: initial;
+    --vFooterColumnDisplay: inline-block;
+    --vHeaderGridTemplateColumns: var(--cSize_Base3) auto;
+    --vHeaderButtonDisplay: initial;
+    --vHeaderNavigationItemDisplay: block;
+    --vHeaderNavigationItemOpacity_Expanded: var(--cOpacity_Opaque);
+    --vHeaderNavigationItemOpacity_Hidden: var(--cOpacity_Transparent);
+    --vHeaderPlaceholderDisplay: none;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+    :root {
+        --vContentPadding: var(--cSize_Null) var(--cSize_Base3);
+        --vContentBlockWidth_1-1-1: calc(100% - var(--cSize_Base2));
+        --vContentBlockWidth_1-1-3: calc(100% - var(--cSize_Base2));
+        --vContentBlockWidth_1-2-3: calc(50% - var(--cSize_Base2));
+        --vContentBlockTableGridTemplateColumns: repeat(2, 1fr);
+        --vFooterDisplay: grid;
+        --vFooterGridTemplateColumns: repeat(3, 1fr);
+        --vFooterColumnDisplay: initial;
+        --vHeaderGridTemplateColumns: var(--cSize_Base3) auto;
+        --vHeaderButtonDisplay: none;
+        --vHeaderNavigationItemDisplay: inline-block;
+        --vHeaderNavigationItemOpacity_Expanded: initial;
+        --vHeaderNavigationItemOpacity_Hidden: initial;
+        --vHeaderPlaceholderDisplay: initial;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    :root {
+        --vContentPadding: var(--cSize_Null) var(--cSize_Base3);
+        --vContentBlockWidth_1-1-1: calc(100% - var(--cSize_Base2));
+        --vContentBlockWidth_1-1-3: calc(33% - var(--cSize_Base2));
+        --vContentBlockWidth_1-2-3: calc(33% - var(--cSize_Base2));
+        --vContentBlockTableGridTemplateColumns: initial;
+        --vFooterDisplay: grid;
+        --vFooterGridTemplateColumns: repeat(3, 1fr);
+        --vFooterColumnDisplay: initial;
+        --vHeaderGridTemplateColumns: var(--cSize_Base3) auto;
+        --vHeaderButtonDisplay: none;
+        --vHeaderNavigationItemDisplay: inline-block;
+        --vHeaderNavigationItemOpacity_Expanded: initial;
+        --vHeaderNavigationItemOpacity_Hidden: initial;
+        --vHeaderPlaceholderDisplay: initial;
+    }
+}
+
+/* VALUES */
+:root {
+    /* COMMON */
+    /* A */
+    --dAColor: inherit;
+    /* AlignChild */
+    --dAlignChildDisplay: flex;
+    --dAlignChildJustifyContent_HorizontalCenter: center;
+    --dAlignChildJustifyContent_HorizontalLeft: flex-start;
+    --dAlignChildJustifyContent_HorizontalRight: flex-end;
+    --dAlignChildAlignItems_VerticalBottom: flex-end;
+    --dAlignChildAlignItems_VerticalMiddle: center;
+    --dAlignChildAlignItems_VerticalTop: flex-start;
+    /* Anchor */
+    --dAnchorMarginTop: calc(-1 * var(--cSize_Base3));
+    --dAnchorPaddingTop: var(--cSize_Base3);
+    /* Body */
+    --dBodyOverflowX: hidden;
+    /* Text */
+    --dTextMarginTop_NotFirstChild: var(--cSize_Base1);
+    --dTextTextAlign_AlignCenter: center;
+    --dTextTextAlign_AlignJustify: justify;
+    --dTextTextAlign_AlignLeft: left;
+    --dTextTextAlign_AlignRight: right;
+    /* CONTENT */
+    /* Content */
+    --dContentMargin: var(--cSize_Base2) calc(-1 * var(--cSize_Base1));
+    --dContentPadding: var(--vContentPadding);
+    /* ContentBlock */
+    --dContentBlockFloat: left;
+    --dContentBlockMargin: var(--cSize_Base1);
+    --dContentBlockWidth_1-1-1: var(--vContentBlockWidth_1-1-1);
+    --dContentBlockWidth_1-1-3: var(--vContentBlockWidth_1-1-3);
+    --dContentBlockWidth_1-2-3: var(--vContentBlockWidth_1-2-3);
+    /* ContentBlockHeader */
+    --dContentBlockHeaderDisplay: grid;
+    --dContentBlockHeaderPadding: var(--cSize_Null) var(--cSize_Base2);
+    --dContentBlockHeaderHeight: var(--cSize_Base3);
+    --dContentBlockHeaderGridTemplateColumns: auto min-content;
+    /* ContentBlockListItem */
+    --dContentBlockListItemDisplay: grid;
+    --dContentBlockListItemPadding: var(--cSize_Base2);
+    /* ContentBlockTable */
+    --dContentBlockTableDisplay: grid;
+    --dContentBlockTableGridGap: var(--cSize_Base1);
+    --dContentBlockTableGridTemplateColumns: var(--vContentBlockTableGridTemplateColumns);
+    /* ContentBlockTableCell */
+    --dContentBlockTableCellDisplay: grid;
+    --dContentBlockTableCellPadding: var(--cSize_Base2);
+    /* ContentBlockText */
+    --dContentBlockTextPadding: var(--cSize_Null) var(--cSize_Base2);
+    /* FOOTER */
+    /* Footer */
+    --dFooterDisplay: var(--vFooterDisplay);
+    --dFooterGridTemplateColumns: var(--vFooterGridTemplateColumns);
+    --dFooterWidth: 100%;
+    /* FooterColumn */
+    --dFooterColumnDisplay: var(--vFooterColumnDisplay);
+    --dFooterColumnPadding: var(--cSize_Null) var(--cSize_Base2);
+    /* FooterColumnCell */
+    --dFooterColumnCellHeight: var(--cSize_Base3);
+    /* HEADER */
+    /* Header */
+    --dHeaderDisplay: grid;
+    --dHeaderGridTemplateColumns: var(--vHeaderGridTemplateColumns);
+    --dHeaderPosition: fixed;
+    --dHeaderWidth: 100%;
+    /* HeaderButton */
+    --dHeaderButtonDisplay: var(--vHeaderButtonDisplay);
+    /* HeaderButtonBar */
+    --dHeaderButtonBarHeight: 2px;
+    --dHeaderButtonBarLeft: var(--cSize_Base2);
+    --dHeaderButtonBarPosition: absolute;
+    --dHeaderButtonBarWidth: 24px;
+    /* HeaderButtonBar1 */
+    --dHeaderButtonBar1Top: 21px;
+    --dHeaderButtonBar1Transform: translate(0, 6px) rotate(225deg);
+    /* HeaderButtonBar2 */
+    --dHeaderButtonBar2Top: 27px;
+    --dHeaderButtonBar2Transform: rotate(180deg);
+    /* HeaderButtonBar3 */
+    --dHeaderButtonBar3Top: 33px;
+    --dHeaderButtonBar3Transform: translate(0, -6px) rotate(135deg);
+    /* HeaderNavigationItem */
+    --dHeaderNavigationItemDisplay: var(--vHeaderNavigationItemDisplay);
+    --dHeaderNavigationItemHeight: var(--cSize_Base3);
+    --dHeaderNavigationItemOpacity_Expanded: var(--vHeaderNavigationItemOpacity_Expanded);
+    --dHeaderNavigationItemOpacity_Hidden: var(--vHeaderNavigationItemOpacity_Hidden);
+    --dHeaderNavigationItemPadding: var(--cSize_Base2);
+    /* HeaderPlaceholder */
+    --dHeaderPlaceholderDisplay: var(--vHeaderPlaceholderDisplay);
+}

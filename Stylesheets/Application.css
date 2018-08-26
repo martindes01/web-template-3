@@ -1,0 +1,242 @@
+﻿/* COMMON */
+
+* {
+    margin: var(--cSize_Null);
+    padding: var(--cSize_Null);
+    text-decoration: var(--cTextDecoration_Default);
+}
+
+a {
+    color: var(--dAColor);
+}
+
+a * {
+    cursor: var(--cCursor_Link);
+}
+
+body {
+    overflow-x: var(--dBodyOverflowX);
+    font-family: var(--cFontFamily);
+}
+
+.AlignChild_HorizontalCenter {
+    display: var(--dAlignChildDisplay);
+    justify-content: var(--dAlignChildJustifyContent_HorizontalCenter);
+}
+
+.AlignChild_HorizontalLeft {
+    display: var(--dAlignChildDisplay);
+    justify-content: var(--dAlignChildJustifyContent_HorizontalLeft);
+}
+
+.AlignChild_HorizontalRight {
+    display: var(--dAlignChildDisplay);
+    justify-content: var(--dAlignChildJustifyContent_HorizontalRight);
+}
+
+.AlignChild_VerticalBottom {
+    display: var(--dAlignChildDisplay);
+    align-items: var(--dAlignChildAlignItems_VerticalBottom);
+}
+
+.AlignChild_VerticalMiddle {
+    display: var(--dAlignChildDisplay);
+    align-items: var(--dAlignChildAlignItems_VerticalMiddle);
+}
+
+.AlignChild_VerticalTop {
+    display: var(--dAlignChildDisplay);
+    align-items: var(--dAlignChildAlignItems_VerticalTop);
+}
+
+.Anchor {
+    margin-top: var(--dAnchorMarginTop);
+    padding-top: var(--dAnchorPaddingTop);
+}
+
+.Text:not(:first-child) {
+    margin-top: var(--dTextMarginTop_NotFirstChild);
+}
+
+.Text_AlignCenter {
+    text-align: var(--dTextTextAlign_AlignCenter);
+}
+
+.Text_AlignJustify {
+    text-align: var(--dTextTextAlign_AlignJustify);
+}
+
+.Text_AlignLeft {
+    text-align: var(--dTextTextAlign_AlignLeft);
+}
+
+.Text_AlignRight {
+    text-align: var(--dTextTextAlign_AlignRight);
+}
+
+/* CONTENT */
+
+.Content {
+    margin: var(--dContentMargin);
+    padding: var(--dContentPadding);
+}
+
+.ContentBlock {
+    float: var(--dContentBlockFloat);
+    margin: var(--dContentBlockMargin);
+}
+
+.ContentBlock_1-1-1 {
+    width: var(--dContentBlockWidth_1-1-1);
+}
+
+.ContentBlock_1-1-3 {
+    width: var(--dContentBlockWidth_1-1-3);
+}
+
+.ContentBlock_1-2-3 {
+    width: var(--dContentBlockWidth_1-2-3);
+}
+
+.ContentBlockHeader {
+    display: var(--dContentBlockHeaderDisplay);
+    padding: var(--dContentBlockHeaderPadding);
+    height: var(--dContentBlockHeaderHeight);
+    line-height: var(--dContentBlockHeaderHeight);
+    grid-template-columns: var(--dContentBlockHeaderGridTemplateColumns);
+}
+
+.ContentBlockListItem {
+    display: var(--dContentBlockListItemDisplay);
+    padding: var(--dContentBlockListItemPadding);
+}
+
+.ContentBlockTable {
+    display: var(--dContentBlockTableDisplay);
+    grid-gap: var(--dContentBlockTableGridGap);
+    grid-template-columns: var(--dContentBlockTableGridTemplateColumns);
+}
+
+.ContentBlockTableCell {
+    display: var(--dContentBlockTableCellDisplay);
+    padding: var(--dContentBlockTableCellPadding);
+}
+
+.ContentBlockText {
+    padding: var(--dContentBlockTextPadding);
+}
+
+/* FOOTER */
+
+.Footer {
+    display: var(--dFooterDisplay);
+    width: var(--dFooterWidth);
+    grid-template-columns: var(--dFooterGridTemplateColumns);
+}
+
+.FooterColumn {
+    display: var(--dFooterColumnDisplay);
+    padding: var(--dFooterColumnPadding);
+}
+
+.FooterColumnCell {
+    min-height: var(--dFooterColumnCellHeight);
+    line-height: var(--dFooterColumnCellHeight);
+}
+
+/* HEADER */
+
+.Header {
+    transition-duration: var(--cDuration_SmallCollapse);
+    display: var(--dHeaderDisplay);
+    position: var(--dHeaderPosition);
+    width: var(--dHeaderWidth);
+    grid-template-columns: var(--dHeaderGridTemplateColumns);
+}
+
+.Header_Expanded {
+    transition-duration: var(--cDuration_SmallExpand);
+    box-shadow: var(--cBoxShadow_16);
+}
+
+.Header_Expanded .HeaderNavigationItem_Hidden {
+    animation: HeaderSlideIn_Down var(--cDuration_SmallExpand) var(--cEasing_Decelerate) var(--cFillMode_Default);
+    opacity: var(--dHeaderNavigationItemOpacity_Expanded);
+}
+
+.HeaderButton {
+    display: var(--dHeaderButtonDisplay);
+    cursor: var(--cCursor_Link);
+}
+
+.HeaderButton_Close .HeaderButtonBar1 {
+    transform: var(--dHeaderButtonBar1Transform);
+}
+
+.HeaderButton_Close .HeaderButtonBar2 {
+    transform: var(--dHeaderButtonBar2Transform);
+    opacity: var(--cOpacity_Transparent);
+}
+
+.HeaderButton_Close .HeaderButtonBar3 {
+    transform: var(--dHeaderButtonBar3Transform);
+}
+
+.HeaderButtonBar {
+    transition-duration: var(--cDuration_ComplexShape);
+    transition-timing-function: var(--cEasing_Standard);
+    position: var(--dHeaderButtonBarPosition);
+    left: var(--dHeaderButtonBarLeft);
+    height: var(--dHeaderButtonBarHeight);
+    width: var(--dHeaderButtonBarWidth);
+}
+
+.HeaderButtonBar1 {
+    top: var(--dHeaderButtonBar1Top);
+}
+
+.HeaderButtonBar2 {
+    top: var(--dHeaderButtonBar2Top);
+}
+
+.HeaderButtonBar3 {
+    top: var(--dHeaderButtonBar3Top);
+}
+
+.HeaderNavigationItem {
+    display: var(--dHeaderNavigationItemDisplay);
+    padding-left: var(--dHeaderNavigationItemPadding);
+    padding-right: var(--dHeaderNavigationItemPadding);
+    line-height: var(--dHeaderNavigationItemHeight);
+}
+
+.HeaderNavigationItem_Hidden {
+    animation: HeaderSlideOut_Up var(--cDuration_SmallCollapse) var(--cEasing_Accelerate) var(--cFillMode_Default);
+    opacity: var(--dHeaderNavigationItemOpacity_Hidden);
+}
+
+.HeaderPlaceholder {
+    display: var(--dHeaderPlaceholderDisplay);
+}
+
+.Spacer {
+    height: var(--dHeaderNavigationItemHeight);
+}
+
+@keyframes HeaderSlideIn_Down {
+    from {
+        height: var(--cSize_Null);
+    }
+    to {
+        height: var(--dHeaderNavigationItemHeight);
+    }
+}
+
+@keyframes HeaderSlideOut_Up {
+    from {
+        height: var(--dHeaderNavigationItemHeight);
+    }
+    to {
+        height: var(--cSize_Null);
+    }
+}

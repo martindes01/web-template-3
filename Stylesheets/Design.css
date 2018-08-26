@@ -1,0 +1,463 @@
+﻿:root {
+    /* Elevation */
+    --cBoxShadow_00: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12);
+    --cBoxShadow_01: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    --cBoxShadow_02: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    --cBoxShadow_03: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
+    --cBoxShadow_04: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    --cBoxShadow_05: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+    --cBoxShadow_06: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    --cBoxShadow_07: 0 4px 5px -2px rgba(0, 0, 0, .2), 0 7px 10px 1px rgba(0, 0, 0, .14), 0 2px 16px 1px rgba(0, 0, 0, .12);
+    --cBoxShadow_08: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+    --cBoxShadow_09: 0 5px 6px -3px rgba(0, 0, 0, .2), 0 9px 12px 1px rgba(0, 0, 0, .14), 0 3px 16px 2px rgba(0, 0, 0, .12);
+    --cBoxShadow_10: 0 6px 6px -3px rgba(0, 0, 0, .2), 0 10px 14px 1px rgba(0, 0, 0, .14), 0 4px 18px 3px rgba(0, 0, 0, .12);
+    --cBoxShadow_11: 0 6px 7px -4px rgba(0, 0, 0, .2), 0 11px 15px 1px rgba(0, 0, 0, .14), 0 4px 20px 3px rgba(0, 0, 0, .12);
+    --cBoxShadow_12: 0 7px 8px -4px rgba(0, 0, 0, .2), 0 12px 17px 2px rgba(0, 0, 0, .14), 0 5px 22px 4px rgba(0, 0, 0, .12);
+    --cBoxShadow_13: 0 7px 8px -4px rgba(0, 0, 0, .2), 0 13px 19px 2px rgba(0, 0, 0, .14), 0 5px 24px 4px rgba(0, 0, 0, .12);
+    --cBoxShadow_14: 0 7px 9px -4px rgba(0, 0, 0, .2), 0 14px 21px 2px rgba(0, 0, 0, .14), 0 5px 26px 4px rgba(0, 0, 0, .12);
+    --cBoxShadow_15: 0 8px 9px -5px rgba(0, 0, 0, .2), 0 15px 22px 2px rgba(0, 0, 0, .14), 0 6px 28px 5px rgba(0, 0, 0, .12);
+    --cBoxShadow_16: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12);
+    --cBoxShadow_17: 0 8px 11px -5px rgba(0, 0, 0, .2), 0 17px 26px 2px rgba(0, 0, 0, .14), 0 6px 32px 5px rgba(0, 0, 0, .12);
+    --cBoxShadow_18: 0 9px 11px -5px rgba(0, 0, 0, .2), 0 18px 28px 2px rgba(0, 0, 0, .14), 0 7px 34px 6px rgba(0, 0, 0, .12);
+    --cBoxShadow_19: 0 9px 12px -6px rgba(0, 0, 0, .2), 0 19px 29px 2px rgba(0, 0, 0, .14), 0 7px 36px 6px rgba(0, 0, 0, .12);
+    --cBoxShadow_20: 0 10px 13px -6px rgba(0, 0, 0, .2), 0 20px 31px 3px rgba(0, 0, 0, .14), 0 8px 38px 7px rgba(0, 0, 0, .12);
+    --cBoxShadow_21: 0 10px 13px -6px rgba(0, 0, 0, .2), 0 21px 33px 3px rgba(0, 0, 0, .14), 0 8px 40px 7px rgba(0, 0, 0, .12);
+    --cBoxShadow_22: 0 10px 14px -6px rgba(0, 0, 0, .2), 0 22px 35px 3px rgba(0, 0, 0, .14), 0 8px 42px 7px rgba(0, 0, 0, .12);
+    --cBoxShadow_23: 0 11px 14px -7px rgba(0, 0, 0, .2), 0 23px 36px 3px rgba(0, 0, 0, .14), 0 9px 44px 8px rgba(0, 0, 0, .12);
+    --cBoxShadow_24: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12);
+    --cZIndex_00: 0;
+    --cZIndex_01: 1;
+    --cZIndex_02: 2;
+    --cZIndex_03: 3;
+    --cZIndex_04: 4;
+    --cZIndex_05: 5;
+    --cZIndex_06: 6;
+    --cZIndex_07: 7;
+    --cZIndex_08: 8;
+    --cZIndex_09: 9;
+    --cZIndex_10: 10;
+    --cZIndex_11: 11;
+    --cZIndex_12: 12;
+    --cZIndex_13: 13;
+    --cZIndex_14: 14;
+    --cZIndex_15: 15;
+    --cZIndex_16: 16;
+    --cZIndex_17: 17;
+    --cZIndex_18: 18;
+    --cZIndex_19: 19;
+    --cZIndex_20: 20;
+    --cZIndex_21: 21;
+    --cZIndex_22: 22;
+    --cZIndex_23: 23;
+    --cZIndex_24: 24;
+    /* Motion */
+    --cDuration_ComplexDetail: 75ms;
+    --cDuration_ComplexShape: 200ms;
+    --cDuration_LargeCollapse: 250ms;
+    --cDuration_LargeExpand: 300ms;
+    --cDuration_SimpleEnter: 150ms;
+    --cDuration_SimpleExit: 75ms;
+    --cDuration_SimpleSelect: 100ms;
+    --cDuration_SmallCollapse: 200ms;
+    --cDuration_SmallExpand: 250ms;
+    --cEasing_Accelerate: cubic-bezier(0.4, 0, 1, 1);
+    --cEasing_Decelerate: cubic-bezier(0, 0, 0.2, 1);
+    --cEasing_Standard: cubic-bezier(0.4, 0, 0.2, 1);
+    --cFillMode_Default: forwards;
+    /* Opacity */
+    --cOpacity_Active: 0.87;
+    --cOpacity_Inactive: 0.60;
+    --cOpacity_Disabled: 0.38;
+}
+
+.Color_Primary {
+    /* Displayed most frequently over screens and components */
+    /* Can be used to accent elements in absence of secondary color */
+    background-color: var(--cBackgroundColor_Primary);
+    color: var(--cColor_Primary);
+}
+
+.Color_Primary_ReversedBack {
+    background-color: var(--cColor_Primary);
+}
+
+.Color_Primary_ReversedFore {
+    color: var(--cBackgroundColor_Primary);
+}
+
+.Color_PrimaryDark {
+    /* Variants are useful for distinguishing between elements */
+    background-color: var(--cBackgroundColor_PrimaryDark);
+    color: var(--cColor_PrimaryDark);
+}
+
+.Color_PrimaryDark_ReversedBack {
+    background-color: var(--cColor_PrimaryDark);
+}
+
+.Color_PrimaryDark_ReversedFore {
+    color: var(--cBackgroundColor_PrimaryDark);
+}
+
+.Color_PrimaryLight {
+    /* Variants are useful for distinguishing between elements */
+    background-color: var(--cBackgroundColor_PrimaryLight);
+    color: var(--cColor_PrimaryLight);
+}
+
+.Color_PrimaryLight_ReversedBack {
+    background-color: var(--cColor_PrimaryLight);
+}
+
+.Color_PrimaryLight_ReversedFore {
+    color: var(--cBackgroundColor_PrimaryLight);
+}
+
+.Color_Secondary {
+    /* Used sparingly to accent elements */
+    /* FABs, selection controls, highlighting selected text, progress bars, links and headlines */
+    background-color: var(--cBackgroundColor_Secondary);
+    color: var(--cColor_Secondary);
+}
+
+.Color_Secondary_ReversedBack {
+    background-color: var(--cColor_Secondary);
+}
+
+.Color_Secondary_ReversedFore {
+    color: var(--cBackgroundColor_Secondary);
+}
+
+.Color_SecondaryDark {
+    /* Variants are useful for distinguishing between elements */
+    background-color: var(--cBackgroundColor_SecondaryDark);
+    color: var(--cColor_SecondaryDark);
+}
+
+.Color_SecondaryDark_ReversedBack {
+    background-color: var(--cColor_SecondaryDark);
+}
+
+.Color_SecondaryDark_ReversedFore {
+    color: var(--cBackgroundColor_SecondaryDark);
+}
+
+.Color_SecondaryLight {
+    /* Variants are useful for distinguishing between elements */
+    background-color: var(--cBackgroundColor_SecondaryLight);
+    color: var(--cColor_SecondaryLight);
+}
+
+.Color_SecondaryLight_ReversedBack {
+    background-color: var(--cColor_SecondaryLight);
+}
+
+.Color_SecondaryLight_ReversedFore {
+    color: var(--cBackgroundColor_SecondaryLight);
+}
+
+.Color_Surface {
+    /* Cards, sheets and menus */
+    background-color: var(--cBackgroundColor_Surface);
+    color: var(--cColor_Surface);
+}
+
+.Color_Background {
+    /* Appears behind scrollable content */
+    background-color: var(--cBackgroundColor_Background);
+    color: var(--cColor_Background);
+}
+
+.Color_Error {
+    background-color: var(--cBackgroundColor_Error);
+    color: var(--cColor_Error);
+}
+
+.Color_Error_ReversedBack {
+    background-color: var(--cColor_Error);
+}
+
+.Color_Error_ReversedFore {
+    color: var(--cBackgroundColor_Error);
+}
+
+[class^="Color_Background"] ::selection, [class*=" Color_Background"] ::selection {
+    background-color: var(--cBackgroundColor_PrimaryLight);
+    color: var(--cColor_PrimaryLight);
+}
+
+[class^="Color_Surface"] ::selection, [class*=" Color_Surface"] ::selection {
+    background-color: var(--cBackgroundColor_PrimaryLight);
+    color: var(--cColor_PrimaryLight);
+}
+
+[class^="Color_Primary"] ::selection, [class*=" Color_Primary"] ::selection {
+    background-color: var(--cColor_Primary);
+    color: var(--cBackgroundColor_Primary);
+}
+
+[class^="Color_Secondary"] ::selection, [class*=" Color_Secondary"] ::selection {
+    background-color: var(--cColor_Secondary);
+    color: var(--cBackgroundColor_Secondary);
+}
+
+[class^="Color_Error"] ::selection, [class*=" Color_Error"] ::selection {
+    background-color: var(--cColor_Error);
+    color: var(--cBackgroundColor_Error);
+}
+
+[class^="Component_Button"], [class*=" Component_Button"] {
+    padding: 0 8px;
+    height: 36px;
+    line-height: 36px;
+    min-width: 64px;
+    text-align: center;
+}
+
+.Component_ButtonContained {
+    border-radius: 4px;
+}
+
+.Component_ButtonFullWidth {
+    width: 100%;
+}
+
+.Component_ButtonOutlined {
+    border: 1px solid var(--cColor_Outline);
+    border-radius: 4px;
+}
+
+.Component_Card {
+    border-radius: 4px;
+}
+
+[class^="Component_Divider"], [class*=" Component_Divider"] {
+    height: 1px;
+    width: 100%;
+}
+
+.Component_DividerFull {
+    background-color: var(--cColor_Outline);
+}
+
+.Elevation_00 {
+    /* Standard side sheet, text button, top bar (resting) */
+    z-index: var(--cZIndex_00);
+}
+
+.Elevation_01 {
+    /* Switch, card (resting), search bar (resting) */
+    z-index: var(--cZIndex_01);
+}
+
+.Elevation_02 {
+    /* Contained button (resting) */
+    z-index: var(--cZIndex_02);
+}
+
+.Elevation_03 {
+    /* Refresh indicator, search bar (scrolled) */
+    z-index: var(--cZIndex_03);
+}
+
+.Elevation_04 {
+    /* Top bar (resting or scrolled) */
+    z-index: var(--cZIndex_04);
+}
+
+.Elevation_06 {
+    /* FAB (resting), snackbar */
+    z-index: var(--cZIndex_06);
+}
+
+.Elevation_08 {
+    /* Menus and sub menus, bottom bar, standard bottom or side sheet */
+    z-index: var(--cZIndex_08);
+}
+
+.Elevation_16 {
+    /* Drawer, modal */
+    z-index: var(--cZIndex_16);
+}
+
+.Elevation_24 {
+    /* Dialog */
+    z-index: var(--cZIndex_24);
+}
+
+.Elevation_Active08:active {
+    /* Contained button (pressed), card (picked up) */
+    z-index: var(--cZIndex_08);
+}
+
+.Elevation_Active12:active {
+    /* FAB (pressed) */
+    z-index: var(--cZIndex_12);
+}
+
+.Shadow_00, .Shadow_Active00:active {
+    box-shadow: var(--cBoxShadow_00);
+}
+
+.Shadow_01, .Shadow_Active01:active {
+    box-shadow: var(--cBoxShadow_01);
+}
+
+.Shadow_02, .Shadow_Active02:active {
+    box-shadow: var(--cBoxShadow_02);
+}
+
+.Shadow_03, .Shadow_Active03:active {
+    box-shadow: var(--cBoxShadow_03);
+}
+
+.Shadow_04, .Shadow_Active04:active {
+    box-shadow: var(--cBoxShadow_04);
+}
+
+.Shadow_05, .Shadow_Active05:active {
+    box-shadow: var(--cBoxShadow_05);
+}
+
+.Shadow_06, .Shadow_Active06:active {
+    box-shadow: var(--cBoxShadow_06);
+}
+
+.Shadow_07, .Shadow_Active07:active {
+    box-shadow: var(--cBoxShadow_07);
+}
+
+.Shadow_08, .Shadow_Active08:active {
+    box-shadow: var(--cBoxShadow_08);
+}
+
+.Shadow_09, .Shadow_Active09:active {
+    box-shadow: var(--cBoxShadow_09);
+}
+
+.Shadow_10, .Shadow_Active10:active {
+    box-shadow: var(--cBoxShadow_10);
+}
+
+.Shadow_11, .Shadow_Active11:active {
+    box-shadow: var(--cBoxShadow_11);
+}
+
+.Shadow_12, .Shadow_Active12:active {
+    box-shadow: var(--cBoxShadow_12);
+}
+
+.Shadow_13, .Shadow_Active13:active {
+    box-shadow: var(--cBoxShadow_13);
+}
+
+.Shadow_14, .Shadow_Active14:active {
+    box-shadow: var(--cBoxShadow_14);
+}
+
+.Shadow_15, .Shadow_Active15:active {
+    box-shadow: var(--cBoxShadow_15);
+}
+
+.Shadow_16, .Shadow_Active16:active {
+    box-shadow: var(--cBoxShadow_16);
+}
+
+.Shadow_17, .Shadow_Active17:active {
+    box-shadow: var(--cBoxShadow_17);
+}
+
+.Shadow_18, .Shadow_Active18:active {
+    box-shadow: var(--cBoxShadow_18);
+}
+
+.Shadow_19, .Shadow_Active19:active {
+    box-shadow: var(--cBoxShadow_19);
+}
+
+.Shadow_20, .Shadow_Active20:active {
+    box-shadow: var(--cBoxShadow_20);
+}
+
+.Shadow_21, .Shadow_Active21:active {
+    box-shadow: var(--cBoxShadow_21);
+}
+
+.Shadow_22, .Shadow_Active22:active {
+    box-shadow: var(--cBoxShadow_22);
+}
+
+.Shadow_23, .Shadow_Active23:active {
+    box-shadow: var(--cBoxShadow_23);
+}
+
+.Shadow_24, .Shadow_Active24:active {
+    box-shadow: var(--cBoxShadow_24);
+}
+
+.Type_H1 {
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+.Type_H2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+}
+
+.Type_H3 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.Type_H4 {
+    font-size: 2.125rem;
+    font-weight: 400;
+}
+
+.Type_H5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Type_H6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.Type_Subtitle1 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Type_Subtitle2 {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.Type_Body1 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Type_Body2 {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.Type_Button {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.Type_Caption {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.Type_Overline {
+    font-size: 0.625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
