@@ -64,6 +64,10 @@
     --cEasing_Decelerate: cubic-bezier(0, 0, 0.2, 1);
     --cEasing_Standard: cubic-bezier(0.4, 0, 0.2, 1);
     --cFillMode_Default: forwards;
+    /* Opacity */
+    --cOpacity_Active: 0.87;
+    --cOpacity_Inactive: 0.60;
+    --cOpacity_Disabled: 0.38;
 }
 
 .Color_Primary {
@@ -177,37 +181,62 @@
     color: var(--cBackgroundColor_Error);
 }
 
-.Component_ButtonContained {
-    padding: 0 16px;
-    height: 36px;
-    line-height: 36px;
-    min-width: 64px;
-    border-radius: 4px;
+[class^="Color_Background"] ::selection, [class*=" Color_Background"] ::selection {
+    background-color: var(--cBackgroundColor_PrimaryLight);
+    color: var(--cColor_PrimaryLight);
 }
 
-.Component_ButtonOutlined {
-    padding: 0 16px;
-    height: 36px;
-    line-height: 36px;
-    min-width: 64px;
-    border: 1px solid var(--cColor_Outline);
-    border-radius: 4px;
+[class^="Color_Surface"] ::selection, [class*=" Color_Surface"] ::selection {
+    background-color: var(--cBackgroundColor_PrimaryLight);
+    color: var(--cColor_PrimaryLight);
 }
 
-.Component_ButtonText {
+[class^="Color_Primary"] ::selection, [class*=" Color_Primary"] ::selection {
+    background-color: var(--cColor_Primary);
+    color: var(--cBackgroundColor_Primary);
+}
+
+[class^="Color_Secondary"] ::selection, [class*=" Color_Secondary"] ::selection {
+    background-color: var(--cColor_Secondary);
+    color: var(--cBackgroundColor_Secondary);
+}
+
+[class^="Color_Error"] ::selection, [class*=" Color_Error"] ::selection {
+    background-color: var(--cColor_Error);
+    color: var(--cBackgroundColor_Error);
+}
+
+[class^="Component_Button"], [class*=" Component_Button"] {
     padding: 0 8px;
     height: 36px;
     line-height: 36px;
     min-width: 64px;
+    text-align: center;
+}
+
+.Component_ButtonContained {
+    border-radius: 4px;
+}
+
+.Component_ButtonFullWidth {
+    width: 100%;
+}
+
+.Component_ButtonOutlined {
+    border: 1px solid var(--cColor_Outline);
+    border-radius: 4px;
 }
 
 .Component_Card {
     border-radius: 4px;
 }
 
-.Component_DividerFull {
+[class^="Component_Divider"], [class*=" Component_Divider"] {
     height: 1px;
     width: 100%;
+}
+
+.Component_DividerFull {
     background-color: var(--cColor_Outline);
 }
 

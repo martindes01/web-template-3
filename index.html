@@ -6,9 +6,11 @@
     <base href="" />
     <title>Template002</title>
     <!-- Icons -->
-    <link rel="icon" href="" /> <!-- Chrome / Firefox / Opera : 48, 96, 144, 192 -->
-    <link rel="apple-touch-icon" href="" /> <!-- Safari : 76, 120, 152 -->
-    <meta name="msapplication-square310x310logo" content="" /> <!-- Edge / Internet Explorer : 70, 150, 310 -->
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">-->
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+    <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+    <!-- Manifest -->
+    <!--<link rel="manifest" href="/site.webmanifest">-->
     <!-- Stylesheets (Reference) -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -23,8 +25,9 @@
     <meta name="author" content="martindes01" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="msapplication-navbutton-color" content="#1976D2"> <!-- Edge / Internet Explorer : [Color] -->
-    <meta name="theme-color" content="#1976D2"> <!-- Chrome / Firefox / Opera : [Color] -->
+    <meta name="msapplication-navbutton-color" content="#1976D2"> <!-- Edge / Internet Explorer : var(--cBackgroundColor_Primary) -->
+    <meta name="msapplication-TileColor" content="#1976d2"> <!-- Windows : var(--cBackgroundColor_Primary) -->
+    <meta name="theme-color" content="#1976D2"> <!-- Chrome / Firefox / Opera : var(--cBackgroundColor_Primary) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Scripts (Custom) -->
     <script defer type="text/javascript" src="Scripts/Header.js"></script>
@@ -54,9 +57,9 @@
         </div>
         <div class="ContentBlock ContentBlock_1-1-3">
             <div class="ContentBlockHeader">
-                <div class="ContentBlockHeaderTitle Text Type_H5">[Heading5]</div>
+                <div class="Text Type_H5">[Heading5]</div>
                 <div class="AlignChild_VerticalMiddle">
-                    <a class="ContentBlockHeaderButton Color_Primary_ReversedFore Component_ButtonOutlined Type_Button" href="" target="">[Button]</a> <!-- href="" target="" -->
+                    <a class="Color_Primary_ReversedFore Component_ButtonOutlined Type_Button" href="" target="">[Button]</a> <!-- href="" target="" -->
                 </div>
             </div>
             <div class="ContentBlockTable">
@@ -79,9 +82,9 @@
         </div>
         <div class="ContentBlock ContentBlock_1-2-3">
             <div class="ContentBlockHeader">
-                <div class="ContentBlockHeaderTitle Text Type_H5">[Heading5]</div>
+                <div class="Text Type_H5">[Heading5]</div>
                 <div class="AlignChild_VerticalMiddle">
-                    <a class="ContentBlockHeaderButton Color_Primary_ReversedFore Component_ButtonOutlined Type_Button" href="" target="">[Button]</a> <!-- href="" target="" -->
+                    <a class="Color_Primary_ReversedFore Component_ButtonOutlined Type_Button" href="" target="">[Button]</a> <!-- href="" target="" -->
                 </div>
             </div>
             <div class="ContentBlockList Color_Surface Component_Card Elevation_01 Shadow_01">
@@ -106,23 +109,23 @@
         </div>
         <div class="ContentBlock ContentBlock_1-2-3">
             <div class="ContentBlockHeader">
-                <div class="ContentBlockHeaderTitle Text Type_H5">[Heading5]</div>
-                <div class="AlignChild_VerticalMiddle">
-                    <a class="ContentBlockHeaderButton Color_Primary_ReversedFore Component_ButtonOutlined Type_Button" href="" target="">[Button]</a> <!-- href="" target="" -->
-                </div>
+                <div class="Text Type_H5">[Heading5]</div>
             </div>
             <div class="ContentBlockList Color_Surface Component_Card Elevation_01 Shadow_01">
-                <a class="ContentBlockListItem" href="" target="">
+                <div class="ContentBlockListItem">
                     <!-- href="" target="" -->
                     <span class="Text Type_H6">[Heading6]</span>
-                    <span class="Text Type_Body2">[Body2]</span>
-                </a>
+                    <span class="Text Type_Body1">[Body1]</span>
+                    <div class="AlignChild_HorizontalRight Text">
+                        <a class="Color_Primary_ReversedFore Component_Button Type_Button" href="" target="">[Button]</a> <!-- href="" target="" -->
+                    </div>
+                </div>
                 <div class="Component_DividerFull"></div>
-                <a class="ContentBlockListItem" href="" target="">
+                <div class="ContentBlockListItem">
                     <!-- href="" target="" -->
                     <span class="Text Type_H6">[Heading6]</span>
-                    <span class="Text Type_Body2">[Body2]</span>
-                </a>
+                    <span class="Text Type_Body1">[Body1]</span>
+                </div>
             </div>
         </div>
     </div>
@@ -130,47 +133,42 @@
         <div class="FooterColumn">
             <div class="FooterColumnCell">Like.</div>
             <div class="FooterColumnCell">
-                <a class="FacebookLike" href="" target="" title="Like [Title] on Facebook">
-                    <!-- href="" target="_blank" -->
+                <a class="FacebookLike" href="" target="_blank" title="Like martindes01 on Facebook">
+                    <!-- href="" -->
                     <span class="fas fa-thumbs-up"></span>
                 </a>
             </div>
+            <span class="Text Type_Overline">Under construction</span>
         </div>
         <div class="FooterColumn">
             <div class="FooterColumnCell">Share.</div>
             <div class="FooterColumnCell">
-                <a class="Facebook" href="" target="" title="Facebook">
-                    <!-- href="http://www.facebook.com/sharer.php?u=https://[Template]/index.html" target="_blank" -->
+                <a class="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://martindes01.github.io/?nocache=1" target="_blank" title="Share on Facebook">
                     <span class="fab fa-facebook"></span>
                 </a>
-                <a class="Twitter" href="" target="" title="Twitter">
-                    <!-- href="https://twitter.com/home?status=Currently%20reading%20https://[Template]/index.html" target="_blank" -->
+                <a class="Twitter" href="https://twitter.com/home?status=Currently%20reading%20https%3A//martindes01.github.io/?nocache=1" target="_blank" title="Share on Twitter">
                     <span class="fab fa-twitter"></span>
                 </a>
-                <a class="GooglePlus" href="" target="" title="Google+">
-                    <!-- href="https://plus.google.com/share?url=https://[Template]/index.html" target="_blank" -->
+                <a class="GooglePlus" href="https://plus.google.com/share?url=https%3A//martindes01.github.io/?nocache=1" target="_blank" title="Share on Google+">
                     <span class="fab fa-google-plus"></span>
                 </a>
             </div>
+            <span class="Text Type_Overline">&nbsp;</span>
         </div>
         <div class="FooterColumn">
             <div class="FooterColumnCell">Subscribe.</div>
             <div class="FooterColumnCell">
-                <a href="" target="" title="email">
-                    <!-- href="" target="_blank" -->
-                    <span class="fas fa-inbox"></span>
-                </a>
-                <a class="YouTube" href="" target="" title="YouTube">
-                    <!-- href="" target="_blank" -->
+                <a class="YouTube" href="https://www.youtube.com/channel/UCXYn3bvhcBCY8OxsK95JRtw" target="_blank" title="martindes01 on YouTube">
                     <span class="fab fa-youtube"></span>
                 </a>
             </div>
+            <span class="Text Type_Overline">Under construction</span>
         </div>
     </div>
     <div class="Footer Type_Subtitle2">
         <div class="FooterColumn"></div>
         <div class="FooterColumn">
-            <div class="FooterColumnCell">martindes01</div>
+            <div class="Text FooterColumnCell">martindes01</div>
         </div>
         <div class="FooterColumn"></div>
     </div>
