@@ -49,6 +49,11 @@ body {
     align-items: var(--dAlignChildAlignItems_VerticalTop);
 }
 
+.Anchor {
+    margin-top: var(--dAnchorMarginTop);
+    padding-top: var(--dAnchorPaddingTop);
+}
+
 .Text:not(:first-child) {
     margin-top: var(--dTextMarginTop_NotFirstChild);
 }
@@ -130,6 +135,7 @@ body {
 }
 
 .FooterColumn {
+    display: var(--dFooterColumnDisplay);
     padding: var(--dFooterColumnPadding);
 }
 

@@ -17,7 +17,9 @@
     --vContentBlockWidth_1-1-3: calc(100% - var(--cSize_Base2));
     --vContentBlockWidth_1-2-3: calc(100% - var(--cSize_Base2));
     --vContentBlockTableGridTemplateColumns: initial;
-    --vFooterGridTemplateColumns: repeat(3, auto);
+    --vFooterDisplay: block;
+    --vFooterGridTemplateColumns: initial;
+    --vFooterColumnDisplay: inline-block;
     --vHeaderGridTemplateColumns: var(--cSize_Base3) auto;
     --vHeaderButtonDisplay: initial;
     --vHeaderNavigationItemDisplay: block;
@@ -33,7 +35,9 @@
         --vContentBlockWidth_1-1-3: calc(100% - var(--cSize_Base2));
         --vContentBlockWidth_1-2-3: calc(50% - var(--cSize_Base2));
         --vContentBlockTableGridTemplateColumns: repeat(2, 1fr);
+        --vFooterDisplay: grid;
         --vFooterGridTemplateColumns: repeat(3, 1fr);
+        --vFooterColumnDisplay: initial;
         --vHeaderGridTemplateColumns: var(--cSize_Base3) auto;
         --vHeaderButtonDisplay: none;
         --vHeaderNavigationItemDisplay: inline-block;
@@ -50,7 +54,9 @@
         --vContentBlockWidth_1-1-3: calc(33% - var(--cSize_Base2));
         --vContentBlockWidth_1-2-3: calc(33% - var(--cSize_Base2));
         --vContentBlockTableGridTemplateColumns: initial;
+        --vFooterDisplay: grid;
         --vFooterGridTemplateColumns: repeat(3, 1fr);
+        --vFooterColumnDisplay: initial;
         --vHeaderGridTemplateColumns: var(--cSize_Base3) auto;
         --vHeaderButtonDisplay: none;
         --vHeaderNavigationItemDisplay: inline-block;
@@ -73,6 +79,9 @@
     --dAlignChildAlignItems_VerticalBottom: flex-end;
     --dAlignChildAlignItems_VerticalMiddle: center;
     --dAlignChildAlignItems_VerticalTop: flex-start;
+    /* Anchor */
+    --dAnchorMarginTop: calc(-1 * var(--cSize_Base3));
+    --dAnchorPaddingTop: var(--cSize_Base3);
     /* Body */
     --dBodyOverflowX: hidden;
     /* Text */
@@ -101,7 +110,7 @@
     --dContentBlockListItemPadding: var(--cSize_Base2);
     /* ContentBlockTable */
     --dContentBlockTableDisplay: grid;
-    --dContentBlockTableGridGap: var(--cSize_Base2);
+    --dContentBlockTableGridGap: var(--cSize_Base1);
     --dContentBlockTableGridTemplateColumns: var(--vContentBlockTableGridTemplateColumns);
     /* ContentBlockTableCell */
     --dContentBlockTableCellDisplay: grid;
@@ -110,10 +119,11 @@
     --dContentBlockTextPadding: var(--cSize_Null) var(--cSize_Base2);
     /* FOOTER */
     /* Footer */
-    --dFooterDisplay: grid;
+    --dFooterDisplay: var(--vFooterDisplay);
     --dFooterGridTemplateColumns: var(--vFooterGridTemplateColumns);
     --dFooterWidth: 100%;
     /* FooterColumn */
+    --dFooterColumnDisplay: var(--vFooterColumnDisplay);
     --dFooterColumnPadding: var(--cSize_Null) var(--cSize_Base2);
     /* FooterColumnCell */
     --dFooterColumnCellHeight: var(--cSize_Base3);
